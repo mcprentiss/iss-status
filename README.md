@@ -1,8 +1,6 @@
 #  iss-status
 Access the ISS status in real-time, from your terminal.
 
-iss-status
-
 ## Dependencies
 To run this script you will need to install [jq](https://stedolan.github.io/jq/download) 
 ```sh
