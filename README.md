@@ -33,3 +33,6 @@ sudo wget https://raw.githubusercontent.com/mcprentiss/iss-status/master/iss-sta
 ## Usage 
 Running is as easy as a simple `iss-status` in the terminal.  
 
+## Inspiration
+
+Very much inspired by smallwat3r/tubestatus 
