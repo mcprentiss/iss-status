@@ -1,8 +1,8 @@
-# tubestatus
+# iss-status
 
 install:
-	cp bin/tubestatus /usr/local/bin/tubestatus
-	chmod 755 /usr/local/bin/tubestatus
+	cp bin/iss-status /usr/local/bin/iss-status
+	chmod 755 /usr/local/bin/iss-status
 
 uninstall:
-	rm -f /usr/local/bin/tubestatus
+	rm -f /usr/local/bin/iss-status
