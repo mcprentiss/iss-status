@@ -35,4 +35,4 @@ Running is as easy as a simple `iss-status` in the terminal.
 
 Very much inspired by smallwat3r/tubestatus 
 
-Endebitted to http://api.open-notify.org/ for the data
+Indebted to http://api.open-notify.org/ for the data
