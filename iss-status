@@ -40,15 +40,14 @@ DELIMITER="¬"
 NONE="\033[0m"
 URL="http://api.open-notify.org/astros.json"
 
-curl -s $URL |
-  jq '.[] |
-      .[] |
-      .name' 2> /dev/null |
-      sed 's/"//g' |
-      wc | awk '{print$1}'
+curl -s $URL > tttt
 
-curl -s $URL |
-  jq '.[] |
-      .[] |
-      .name' 2> /dev/null |
-      sed 's/"//g'
+cat tttt |  jq  ' .number'
+
+cat tttt |
+     jq '.[] |
+         .[] |
+         .name' 2> /dev/null |
+         sed 's/"//g'
+
+rm tttt
