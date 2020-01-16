@@ -33,6 +33,6 @@ Running is as easy as a simple `iss-status` in the terminal.
 
 ## Inspiration
 
-Very much inspired by smallwat3r/tubestatus 
+Very much inspired by https://github.com/smallwat3r/tubestatus 
 
 Indebted to http://api.open-notify.org/ for the data
