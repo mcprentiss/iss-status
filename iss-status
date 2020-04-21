@@ -1,9 +1,9 @@
 #!/bin/bash
+
 # File  : issstatus.sh
 #
 # This script fetch the ISS statuses from the TFL API
 # http://api.open-notify.org/astros.json and returns the results in terminal.
-#
 
 if ! command -v jq &>/dev/null; then
   echo "You need to install jq to run this script."
@@ -40,14 +40,12 @@ DELIMITER="¬"
 NONE="\033[0m"
 URL="http://api.open-notify.org/astros.json"
 
-curl -s $URL > tttt
+curl -s $URL > ttt
 
-cat tttt |  jq  ' .number'
+#cat tttt | jq  ' .number'
+#cat tttt | jq '.[] | .[] | .name' 2> /dev/null | sed 's/"//g'
 
-cat tttt |
-     jq '.[] |
-         .[] |
-         .name' 2> /dev/null |
-         sed 's/"//g'
+cat ttt |  jq  ' .number'
+cat ttt |  jq  ' .people | .[] | .name ' | sed 's/"//g'
 
-rm tttt
+rm ttt
